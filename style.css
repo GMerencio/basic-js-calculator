@@ -1,0 +1,113 @@
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+
+html {
+  width:  100%;
+  height: 100%;
+}
+
+body {
+  width:  100%;
+  height: 100%;
+  display:          flex;
+  justify-content:  center;
+  align-items:      center;
+  background-color: #32394a;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+/*------------------------------------*\
+  #CALCULATOR
+\*------------------------------------*/
+
+.calculator {
+  background-color: #379acc;
+  width: 17rem;
+  padding: 1.5rem 0.6rem;
+  border-style:   none;
+  border-radius:  1rem;
+  box-shadow: 0px 8px 7px 0px #222121, inset 0px -12px 0px 0px #163f54;
+}
+
+  .calculator__title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    color: #000;
+  }
+
+  .calculator__display {
+    background-color: #fff;
+    margin-left: 5%;
+    width: 85%;
+    padding: 0.4rem;
+    border: 0.15rem solid #303030;
+    border-radius: 0.5rem;
+    text-align: right;
+  }
+
+    .calculator__display__txt-main, .calculator__display__txt-sub {
+      margin: 0;
+      width:  100%;
+      resize: none;
+      border: none;
+      text-align: right;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    .calculator__display__txt-main {
+      font-size: 2rem;
+      height: 5rem;
+    }
+
+    .calculator__display__txt-sub {
+      font-size: 0.8rem;
+      height: 1rem;
+      color: #8C8C7B;
+    }
+
+  .calculator__buttons {
+    margin-top: 5%;
+    width: 97%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.btn-calculator, .btn-calculator--red,
+.btn-calculator--2hor, .btn-calculator--2ver {
+  padding:        0.8rem 0.5rem;
+  margin-left:    0.9rem;
+  margin-bottom:  0.6rem;
+  border-style:   none;
+  border-radius:  0.5rem;
+  background-color: #32394a;
+  color:            #fff;
+  font-family:  'Orbitron', sans-serif;
+  font-weight:  bold;
+  box-shadow: 0px 3px 0px 0px #222121;
+}
+
+.btn-calculator--red {
+  background-color: #A72D45;
+  box-shadow: 0px 3px 0px 0px #671c2a;
+}
+
+.btn-calculator:active, .btn-calculator--red:active {
+  box-shadow: none;
+}
+
+.btn-calculator--2hor {
+  grid-column-end: span 2;
+}
+
+.btn-calculator--2ver {
+  grid-row-end: span 2;
+}
